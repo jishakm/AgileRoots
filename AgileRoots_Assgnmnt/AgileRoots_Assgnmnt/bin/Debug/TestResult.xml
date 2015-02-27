@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\Jisha\Documents\Visual Studio 2013\Projects\AgileRoots_Assgnmnt\AgileRoots_Assgnmnt\bin\Debug\AgileRoots_Assgnmnt.exe" total="5" errors="0" failures="2" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-02-26" time="16:01:31">
+  <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.8009" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Users\Jisha\Documents\Visual Studio 2013\Projects\AgileRoots_Assgnmnt\packages\NUnit.Runners.2.6.4\tools" machine-name="JISHA" user="Jisha" user-domain="JISHA" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\Users\Jisha\Documents\Visual Studio 2013\Projects\AgileRoots_Assgnmnt\AgileRoots_Assgnmnt\bin\Debug\AgileRoots_Assgnmnt.exe" executed="True" result="Failure" success="False" time="0.239" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="AgileRoots_Assgnmnt" executed="True" result="Failure" success="False" time="0.221" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="TestCartItem" executed="True" result="Failure" success="False" time="0.218" asserts="0">
+            <results>
+              <test-case name="AgileRoots_Assgnmnt.TestCartItem.TestCalcImportTax" executed="True" result="Success" success="True" time="0.039" asserts="1" />
+              <test-case name="AgileRoots_Assgnmnt.TestCartItem.TestCalcSalesTax" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="AgileRoots_Assgnmnt.TestCartItem.TestOutput1" executed="True" result="Success" success="True" time="0.006" asserts="1" />
+              <test-case name="AgileRoots_Assgnmnt.TestCartItem.TestOutput2" executed="True" result="Failure" success="False" time="0.036" asserts="1">
+                <failure>
+                  <message><![CDATA[  String lengths are both 97. Strings differ at index 67.
+  Expected: "...imported bottle of perfume:54.65 Sales Taxes:7.65 Total:65.15", ignoring case
+  But was:  "...imported bottle of perfume:54.63 Sales Taxes:7.63 Total:65.13"
+  ---------------------------------------------^
+]]></message>
+                  <stack-trace><![CDATA[at NUnit.Framework.StringAssert.AreEqualIgnoringCase(String expected, String actual, String message, Object[] args)
+at AgileRoots_Assgnmnt.TestCartItem.TestOutput2() in c:\Users\Jisha\Documents\Visual Studio 2013\Projects\AgileRoots_Assgnmnt\AgileRoots_Assgnmnt\TestCartItem.cs:line 79
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="AgileRoots_Assgnmnt.TestCartItem.TestOutput3" executed="True" result="Failure" success="False" time="0.004" asserts="1">
+                <failure>
+                  <message><![CDATA[  String lengths are both 156. Strings differ at index 95.
+  Expected: "...imported box of chocolates:11.85 Sales Taxes:6.70 Total:74.68", ignoring case
+  But was:  "...box of imported chocolates:11.81 Sales Taxes:6.66 Total:74.64"
+  --------------^
+]]></message>
+                  <stack-trace><![CDATA[at NUnit.Framework.StringAssert.AreEqualIgnoringCase(String expected, String actual, String message, Object[] args)
+at AgileRoots_Assgnmnt.TestCartItem.TestOutput3() in c:\Users\Jisha\Documents\Visual Studio 2013\Projects\AgileRoots_Assgnmnt\AgileRoots_Assgnmnt\TestCartItem.cs:line 96
+]]></stack-trace>
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
